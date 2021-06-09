@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".util.NotDetayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+            <!--
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp">
+
+                <Button
+                    android:id="@+id/btnNotlaraDon"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:drawable/ic_menu_revert" />
+
+                <TextView
+                    android:id="@+id/txtBaslik"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_toEndOf="@+id/btnNotlaraDon"
+                    android:layout_toRightOf="@+id/btnNotlaraDon"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:enabled="true"
+
+
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="TextView"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSil"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:drawable/ic_menu_delete" />
+
+                <Button
+                    android:id="@+id/btnDuzenle"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:drawable/ic_menu_edit" />
+
+                <Button
+                    android:id="@+id/btnAyar"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@android:drawable/ic_menu_zoom" />
+
+                <Button
+                    android:id="@+id/btnGonder"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:background="?attr/actionModeShareDrawable" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytDetay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f4ede7"
+                android:gravity="top"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <ScrollView
+                    android:id="@+id/scrViewDetay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:addStatesFromChildren="false"
+                    android:focusable="auto">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtIcerik"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:enabled="true"
+                            android:text="..."
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textIsSelectable="true"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtTarih"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingTop="5dp"
+                            android:text="..."
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

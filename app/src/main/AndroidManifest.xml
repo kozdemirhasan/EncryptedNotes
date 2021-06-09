@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kozdemirhasan.encryptednotes">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_notdefteri"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.kozdemirhasan.encryptednotes.util.MainActivity"
+            android:screenOrientation="portrait">
+
+            <!-- android:theme="@style/Theme.AppCompat.NoActionBar"  action bar gizleme -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".util.KullaniciKayitActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.KULLANICIKAYIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".util.NotDetayActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.NOTDETAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".util.NotEkleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.NOTEKLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".util.NotGuncelleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.NOTGUNCELLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".util.NotlarActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.NOTLAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".util.AyarlarActivity" />
+    </application>
+
+</manifest>

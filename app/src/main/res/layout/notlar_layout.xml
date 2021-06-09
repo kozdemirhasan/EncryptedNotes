@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/child_selector"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+
+    <TextView
+        android:id="@+id/txtBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left|center"
+        android:layout_weight="5"
+        android:baselineAligned="false"
+        android:enabled="true"
+        android:gravity="left|center"
+        android:paddingLeft="40dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="@color/colorNotes"
+        android:textIsSelectable="false"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/txtTarih"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center|fill"
+        android:layout_toStartOf="@+id/chkSecim"
+        android:layout_toLeftOf="@+id/chkSecim"
+        android:layout_weight="5"
+        android:baselineAligned="false"
+        android:enabled="true"
+        android:gravity="right|center"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp" />
+
+    <CheckBox
+        android:id="@+id/chkSecim"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:enabled="true"
+        android:gravity="center"
+        android:textColorLink="@android:color/darker_gray"
+        android:visibility="visible" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Encrypted Notes</string>
+    <string name="title_activity_deneme">Deneme</string>
+    <string name="title_activity_aaaa">AaaaActivity</string>
+    <string name="title_activity_tttt">tttt</string>
+    <string name="title_activity_xxxx">xxxxActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="ok">Ok</string>
+    <string name="title_activity_aaa">aaa</string>
+
+</resources>

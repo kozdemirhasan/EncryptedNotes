@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:context="com.mycompany.util.NotlarActivity"
+    tools:ignore="NamespaceTypo">
+
+    <item
+        android:id="@+id/verileriYedekle"
+        android:title="Back up data"/>
+
+    <item
+        android:id="@+id/yedektenGeriYukle"
+        android:title="Restore from backup"/>
+
+    <item
+        android:id="@+id/parolaDegistir"
+        android:title="Change password"/>
+
+    <item
+        android:id="@+id/ayarlar"
+        android:title="Settings"/>
+
+
+
+</menu>
