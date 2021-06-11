@@ -51,7 +51,7 @@ public class KullaniciKayitActivity extends AppCompatActivity {
                     UserDatabase db = new UserDatabase(KullaniciKayitActivity.this);
                     db.ac();
                     //parolayı ve fake parolayı parola key i ile aes-256 ya çevirip sonrada md5 ile dönüştürüp vt kaydediyoruz
-                    Crypt crypt = new Crypt();
+
                     long x = 0;
                     try {
 

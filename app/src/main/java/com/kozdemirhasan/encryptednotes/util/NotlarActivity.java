@@ -393,7 +393,7 @@ public class NotlarActivity extends AppCompatActivity {
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HHmmss");
            String  tarih = dateFormat.format(System.currentTimeMillis());
 
-            FileSaveDialog.Default_File_Name = "MyNotes_" + tarih;
+            FileSaveDialog.Default_File_Name = "EncryptedNotes_" + tarih;
          //   FileSaveDialog.Default_File_Name = "MyNotes_" + tahihBilgisiniGetir();
             FileSaveDialog.chooseFile_or_Dir();
 

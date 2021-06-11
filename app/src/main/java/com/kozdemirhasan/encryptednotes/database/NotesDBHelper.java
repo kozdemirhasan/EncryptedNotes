@@ -12,7 +12,7 @@ import com.kozdemirhasan.encryptednotes.pojo.Sabitler;
 
 public class NotesDBHelper extends SQLiteOpenHelper {
 
-    private static final String CREATE_TABLE_NOTLAR = "create table " + Sabitler.TABLO_NOTES_NAME
+    private static final String CREATE_TABLE_NOTLAR = "CREATE TABLE IF NOT EXISTS " + Sabitler.TABLO_NOTES_NAME
             + " (" + Sabitler.KEY_NOT_ID + " integer primary key autoincrement, "
             + Sabitler.ROW_NOTE_TITLE + " text  not null, "
             + Sabitler.ROW_NOTE_BODY + " text  not null, "
